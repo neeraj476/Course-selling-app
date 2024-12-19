@@ -2,7 +2,6 @@
 // const Router = express.Router;
 
 const { Router } = require("express");
-const { model } = require("mongoose");
 const userRouter = Router(); // router is function 
 
 userRouter.post("/signup", (req, res) => {
