@@ -17,32 +17,15 @@ app.use("/admin",adminRouter);
 
 
 
+// only start if database is up (online);
+async function main() {
+    await mongoose.connect("mongodb+srv://neeraj7682:Neeraj%4018104@cluster0.mvaon.mongodb.net/Coursera-app");
+    app.listen(3000, () => {
+        console.log("server is listing at port 3000");
+    })
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-app.listen(3000, () => {
-    console.log("server is listing at port 3000");
+main().then(() => {
+    console.log("Db is connected successfully");
 })
+

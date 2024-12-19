@@ -2,14 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
 
-async function main() {
-    await mongoose.connect("mongodb+srv://neeraj7682:Neeraj%4018104@cluster0.mvaon.mongodb.net/Coursera-app");
-} 
-
-main().then(() => {
-    console.log("Db is connected successfully");
-})
-
 // User schema
 const userSchema = new Schema({
     email: { type: String, unique: true },

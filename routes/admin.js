@@ -5,27 +5,27 @@ const adminModel = require("../db")
 
 adminRouter.post("/signup", (req, res) => {
     res.json({
-        message: "signup endpoint ",
+        message: "admin endpoint ",
     })
 })
 adminRouter.post("/signin", (req, res) => {
     res.json({
-        message: "hello i am root ",
+        message: "admin endpoint ",
     })
 })
-adminRouter.post("/course", (req, res) => {
+adminRouter.post("/", (req, res) => {
     res.json({
-        message: "hello i am root ",
+        message: "hello i am admin ",
     })
 })
-adminRouter.put("/course", (req, res) => {
+adminRouter.put("/", (req, res) => {
     res.json({
-        message: "hello i am root ",
+        message: "hello i am admin ",
     })
 })
-adminRouter.get("/course/bulk", (req, res) => {
+adminRouter.get("//bulk", (req, res) => {
     res.json({
-        message: "hello i am root ",
+        message: "hello i am admin ",
     })
 })
 
