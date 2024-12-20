@@ -3,6 +3,9 @@ const app = express();
 const mongoose = require("mongoose");
 const { z } = require("zod");
 const jwt = require("jsonwebtoken");
+// const brcypt = require("brcypt");
+
+app.use(express.json());
 
 //geting Routers
 const {userRouter} = require("./routes/user");
